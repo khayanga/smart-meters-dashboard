@@ -18,12 +18,12 @@ export function LoginForm({
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card>
+      <Card className="  rounded-lg">
       <div className='pl-4 pt-2 '>
           <Image src="/logo.png"
           alt="Company Logo"
-          width={110}
-          height={110}/>
+          width={100}
+          height={100}/>
         </div>
         <CardHeader>
           <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
@@ -48,7 +48,7 @@ export function LoginForm({
                   <Label htmlFor="password">Password</Label>
                   <a
                     href="#"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline text-blue-400"
                   >
                     Forgot your password?
                   </a>
@@ -62,7 +62,7 @@ export function LoginForm({
             </div>
             <div className="mt-4 text-center text-sm">
               Don&apos;t have an account?{" "}
-              <Link href="/signup" className="underline underline-offset-4">
+              <Link href="/signup" className="underline underline-offset-4 text-blue-400">
                 Sign up
               </Link>
             </div>

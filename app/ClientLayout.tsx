@@ -1,9 +1,10 @@
 "use client";
-
-
+import { AppSidebar } from "@/components/app-sidebar";
 import { LoadingStateProvider, useLoadingState } from "@/components/LoadingContext";
 import Spinner from "@/components/Spinner";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/toaster";
+
 
 const LoadingIndicator = () => {
   const { isLoading } = useLoadingState();
@@ -17,13 +18,19 @@ const LoadingIndicator = () => {
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
     
-      <div>
+      <>
         <LoadingStateProvider>
           <LoadingIndicator />
-          {children}
+          {/* <SidebarProvider>
+            <AppSidebar />
+            <main>
+              <SidebarTrigger /> */}
+              {children}
+            {/* </main>
+        </SidebarProvider> */}
         </LoadingStateProvider>
         <Toaster />
-      </div>
+      </>
    
   );
 }
