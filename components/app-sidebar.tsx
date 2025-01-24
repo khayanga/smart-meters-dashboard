@@ -23,14 +23,14 @@ import Link from "next/link"
 export function AppSidebar() {
    
   return (
-    <Sidebar>
+    <Sidebar className="shadow-md" >
         <SidebarHeader>
             
         <div className="flex items-start justify-start">
                 <Image src='/logo.png' 
                 alt="Company Logo"
-                width={80}
-                height={80}/>
+                width={90}
+                height={90}/>
               </div>
 
         </SidebarHeader>
@@ -43,7 +43,7 @@ export function AppSidebar() {
                 <SidebarMenuItem  key={item.title}>
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
-                      <item.icon  className="w-7 h-7"/>
+                      <item.icon  />
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>

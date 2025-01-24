@@ -2,7 +2,7 @@ import {  Building, CircleUserRound, Files, Home,  MapPin, MapPinHouse, Timer } 
 
 export const items = [
     {
-      title: "Home",
+      title: "Dashboard",
       url: "/client-dashboard",
       icon: Home,
     },
@@ -13,7 +13,7 @@ export const items = [
     },
     {
       title: "Sites",
-      url: "/site",
+      url: "/sites",
       icon: MapPin,
     },
     {
