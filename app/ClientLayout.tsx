@@ -4,14 +4,7 @@ import { LoadingStateProvider, useLoadingState } from "@/components/LoadingConte
 import Spinner from "@/components/Spinner";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/toaster";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+
 import Nav from "@/components/Nav";
 import { ModeToggle } from "@/components/ModeToggle";
 
@@ -35,7 +28,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <LoadingIndicator />
           <SidebarProvider >
             <AppSidebar />
-            <main className="flex flex-col w-full min-h-svh">
+            <main className="flex flex-col w-full min-h-svh pb-8">
               <header className="flex h-12 shrink-0 items-center justify-between gap-2  w-full pr-6 ">
               <div className="flex items-center gap-2  px-2">
               <SidebarTrigger />
