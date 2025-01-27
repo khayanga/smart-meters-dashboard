@@ -58,14 +58,14 @@ interface DataTableProps<TData, TValue> {
         <div className="flex items-center justify-start space-x-2 py-4 pl-2 mb-1">
         <div className="relative w-56">
           {/* Input Field */}
-          <Input
+          {/* <Input
             placeholder="Search..."
             value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
               table.getColumn("email")?.setFilterValue(event.target.value)
             }
             className="pl-10 rounded-xl" // Add padding to make space for the icon
-          />
+          /> */}
 
           {/* Icon */}
           <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />

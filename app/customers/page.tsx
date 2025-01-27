@@ -70,9 +70,11 @@ const Page = () => {
         </p>
 
         <Form {...form}>
-          <form
+          <Card className="mt-3 shadow-md md:max-w-4xl rounded-lg">
+            <CardContent>
+            <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="mt-5 bg-muted/50 shadow-lg md:pt-2 md:max-w-4xl px-2 rounded-lg"
+            
           >
             <div className="flex flex-wrap gap-6 p-2">
               <FormField
@@ -128,16 +130,21 @@ const Page = () => {
             <Button type="submit" className="m-4">
               Add Customer
             </Button>
-          </form>
+            </form>
+
+            </CardContent>
+          </Card>
+          
         </Form>
       </div>
 
-      <div className="flex flex-row items-center justify-between gap-6 mt-2">
-          <h1 className="font-bold tracking-wide">Customers List</h1>
+      <div className="flex flex-col items-start  gap-1 mt-2">
+          <h1 className="font-bold tracking-wide">Customer List</h1>
+          <p className='text-sm tracking-wider font-light'>The following table shows a list of all the customers</p>
         </div>
 
       {/* Data Table */}
-      <div className="min-h-[100vh] flex-1 rounded-lg md:min-h-min mt-2 ">
+      <div className="min-h-[100vh] flex-1 rounded-lg md:min-h-min ">
         <DataTable columns={columns} data={data} />
       </div>
     </div>
