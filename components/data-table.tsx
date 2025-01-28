@@ -53,7 +53,7 @@ interface DataTableProps<TData, TValue> {
     })
    
     return (
-      <div className="rounded-lg border">
+      <div className="rounded-lg border shadow-md">
         {/* Filter and search */}
         <div className="flex items-center justify-start space-x-2 py-4 pl-2 mb-1">
         <div className="relative w-56">
@@ -68,7 +68,7 @@ interface DataTableProps<TData, TValue> {
           /> */}
 
           {/* Icon */}
-          <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+          <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-3 h-3" />
         </div>
        
       </div>

@@ -64,8 +64,7 @@ const Page = () => {
     form.reset();
   };
 
-  
-  
+   
 
   return (
     <div className="flex flex-1 flex-col gap-4 px-4">
@@ -73,7 +72,7 @@ const Page = () => {
       <div className="flex flex-col gap-2">
         <div className="flex flex-row items-center gap-4">
           <h1 className="font-bold tracking-wider">Site Management</h1>
-          {/* <Button>{data.length}</Button> */}
+          <Button>{data.length}</Button>
         </div>
 
         <p className="mt-1 tracking-wider text-sm font-light">
