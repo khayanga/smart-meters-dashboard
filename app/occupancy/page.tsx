@@ -8,10 +8,6 @@ import { Occupancy, columns } from './columns';
 const Page = () => {
   const { isLoading, setIsLoading } = useLoadingState();
 
-  
-  
-  
-
   return (
     <div className="flex flex-1 flex-col gap-4 px-4">
       {/* Form */}

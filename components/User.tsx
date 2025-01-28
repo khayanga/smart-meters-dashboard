@@ -30,6 +30,7 @@ import {
     SidebarMenuItem,
     useSidebar,
   } from "@/components/ui/sidebar"
+import Link from 'next/link'
 
 const User = () => {
   return (
@@ -62,21 +63,24 @@ const User = () => {
             
           </DropdownMenuLabel>
           <DropdownMenuGroup>
-          <DropdownMenuItem>
+            <Link href="/billing">
+            <DropdownMenuItem>
               <Settings />
-              Settings
+              Billing Information
             </DropdownMenuItem>
-            
 
-            <DropdownMenuItem>
-              <BadgeCheck />
-              Account
-            </DropdownMenuItem>
+            </Link>
+         
             
-            <DropdownMenuItem>
-              <Bell />
-              Notifications
+            <Link href="/profile">
+              <DropdownMenuItem>
+              
+              <BadgeCheck />
+              Profile details
             </DropdownMenuItem>
+            </Link>
+            
+            
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
