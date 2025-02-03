@@ -39,6 +39,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </div>
               </header> 
               {children}
+              
+              <footer className=" mt-4 font-light">
+              <p className="text-sm text-center">
+                &copy; {new Date().getFullYear()} Ubuntu Waterhub Africa. All rights reserved.
+              </p>
+              </footer>
             </main>
         </SidebarProvider>
         </LoadingStateProvider>

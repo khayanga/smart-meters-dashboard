@@ -1,4 +1,4 @@
-import {  Building, CircleUserRound, Files, Home,  MapPin, MapPinHouse, Timer } from "lucide-react"
+import {  Building, CircleUserRound, Files, Home,  MapPin, MapPinHouse, Timer, UserRound } from "lucide-react"
 
 export const items = [
     {
@@ -9,7 +9,7 @@ export const items = [
     {
       title: "Customers",
       url: "/customers",
-      icon: CircleUserRound ,
+      icon: UserRound ,
     },
     {
       title: "Sites",

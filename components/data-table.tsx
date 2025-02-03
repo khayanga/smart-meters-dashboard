@@ -9,9 +9,17 @@ import {
   getFilteredRowModel,
   useReactTable,
 } from "@tanstack/react-table"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 
 import { Input } from "@/components/ui/input"
-import React from "react"
+import React, { useState } from "react"
  
 import {
   Table,
@@ -39,6 +47,7 @@ interface DataTableProps<TData, TValue> {
     const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
       []
     )
+    const [selectedColumn, setSelectedColumn] = useState<string>("")
     
     const table = useReactTable({
       data,
@@ -54,23 +63,51 @@ interface DataTableProps<TData, TValue> {
    
     return (
       <div className="rounded-lg border shadow-md">
+        
         {/* Filter and search */}
-        <div className="flex items-center justify-start space-x-2 py-4 pl-2 mb-1">
-        <div className="relative w-56">
-          {/* Input Field */}
-          {/* <Input
-            placeholder="Search..."
-            value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
-            onChange={(event) =>
-              table.getColumn("email")?.setFilterValue(event.target.value)
-            }
-            className="pl-10 rounded-xl" // Add padding to make space for the icon
-          /> */}
+        <div className="flex items-center justify-between space-x-2 pt-2 px-4">
+        {/* Select Column to Filter */}
+        <Select onValueChange={setSelectedColumn}>
+          <SelectTrigger className="w-40 rounded-xl ">
+            <SelectValue placeholder="Filter by..." />
+          </SelectTrigger>
+          <SelectContent>
+            {columns.map((col, index) => {
+              const key = "id" in col ? col.id : `col-${index}`;
+              const value = "accessorKey" in col ? col.accessorKey?.toString() ?? "" : col.id?.toString() ?? "";
+              
+              return (
+                <SelectItem key={key} value={value}>
+                  {col.header?.toString()}
+                </SelectItem>
+              );
+            })}
+          </SelectContent>
 
-          {/* Icon */}
-          <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-3 h-3" />
-        </div>
+
+        </Select>
+
+        {/* Search Input */}
        
+            <div className="relative w-56">
+              <Input
+                placeholder="Search..."
+                value={
+                  selectedColumn
+                    ? (table.getColumn(selectedColumn)?.getFilterValue() as string) ?? ""
+                    : ""
+                }
+                onChange={(event) => {
+                  if (selectedColumn) {
+                    table.getColumn(selectedColumn)?.setFilterValue(event.target.value);
+                  }
+                }}
+                className="pl-10 rounded-xl"
+                disabled={!selectedColumn} // Disable input until a column is selected
+              />
+              <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            </div>
+
       </div>
 
 
