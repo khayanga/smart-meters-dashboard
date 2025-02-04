@@ -28,7 +28,7 @@ const DashboardCards = () => {
 
         </div>
 
-        <div className=" rounded-xl bg-blue-100 p-4" >
+        <div className=" rounded-xl bg-blue-50 p-4" >
         <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <div className="text-sm font-medium text-gray-800 flex items-center justify-between w-full">
                 <h1>Sites</h1>
@@ -45,7 +45,7 @@ const DashboardCards = () => {
 
 
         </div>
-        <div className=" rounded-xl bg-blue-100 p-4" >
+        <div className=" rounded-xl bg-blue-50 p-4" >
         <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <div className="text-sm font-medium text-gray-800 flex items-center justify-between w-full">
                 <h1>Meters</h1>
@@ -62,7 +62,7 @@ const DashboardCards = () => {
 
 
         </div>
-        <div className=" rounded-xl bg-blue-100 p-4" >
+        <div className=" rounded-xl bg-blue-50 p-4" >
         <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <div className="text-sm font-medium text-gray-800 flex items-center justify-between w-full">
                 <h1>Customers</h1>

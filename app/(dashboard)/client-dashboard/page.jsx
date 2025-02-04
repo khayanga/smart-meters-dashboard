@@ -1,7 +1,9 @@
 'use client'
 import { Consumption } from '@/components/Consumption'
 import DashboardCards from '@/components/DashboardCards'
+import Map from '@/components/Map'
 import React from 'react'
+import DashboardTable from '../../../components/DashboardTable'
 
 
 const page = () => {
@@ -13,17 +15,20 @@ const page = () => {
 
       {/* graph */}
     
-    <div className="min-h-[100vh] rounded-xl flex flex-col md:flex-row gap-4 bg-muted/50 md:min-h-min p-2" >
+    <div className="min-h-[100vh] bg-muted/50 rounded-xl flex flex-col items-center justify-center md:flex-row gap-4 mt-6 md:min-h-min " >
       <div className='md:w-1/2'>
       <Consumption/>
 
       </div>
       <div className='md:w-1/2'>
+        <Map/>
       
-
       </div>
      
     </div>
+
+    <DashboardTable/>
+    
     
   </div>
   )

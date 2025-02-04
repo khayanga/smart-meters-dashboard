@@ -24,6 +24,12 @@ const chartData = [
   { month: "April",  litres: 90 },
   { month: "May",  litres: 130 },
   { month: "June",  litres: 40 },
+  { month: "January",  litres: 80 },
+  { month: "February",  litres: 50 },
+  { month: "March",  litres: 120 },
+  { month: "January",  litres: 80 },
+  { month: "February",  litres: 50 },
+  { month: "March",  litres: 120 },
 ]
 
 const chartConfig = {
