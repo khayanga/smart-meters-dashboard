@@ -37,3 +37,84 @@ export const items = [
       icon: Files,
     },
   ]
+
+export const customers=[
+  {
+    id:1,
+    name:"Martha Liu",
+    phone:'0110048178',
+  },
+  {
+    id:2,
+    name:"Joseph Owino",
+    phone:'0110048178',
+  },
+  {
+    id:3,
+    name:"Mark Gitau",
+    phone:'0110048178',
+  },
+  {
+    id:4,
+    name:"Mary Wammbui",
+    phone:'0110048178',
+  },
+  {
+    id:5,
+    name:"Jeff Wammbui",
+    phone:'0110048178',
+  },
+ 
+  
+ 
+  
+]
+
+export const meters=[
+  {
+    id:1,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:2,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:3,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:4,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:5,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:6,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+  {
+    id:7,
+    serial:"1234567889",
+    reading:'1450L',
+    site:"Nakuru",
+  },
+ 
+  
+ 
+  
+]

@@ -65,7 +65,7 @@ const DashboardCards = () => {
         <div className=" rounded-xl bg-blue-50 p-4" >
         <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <div className="text-sm font-medium text-gray-800 flex items-center justify-between w-full">
-                <h1>Customers</h1>
+                <h1>Total revenue</h1>
                 <UserRound className="h-5 w-5 text-blue-500 mr-2 font-bold"/>
             </div>
 
@@ -73,9 +73,9 @@ const DashboardCards = () => {
 
         
         <div className="text-2xl font-bold text-blue-500">
-            <h1>50</h1>
+            <h1>5000</h1>
             </div>
-            <p className="text-xs mt-3 text-gray-700">Total number of customers </p>
+            <p className="text-xs mt-3 text-gray-700">Total amount earned </p>
 
 
         </div>
