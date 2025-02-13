@@ -5,24 +5,24 @@ import Map from '@/components/Map'
 import React from 'react'
 import CustomersTable from '@/components/CustomersTable'
 import MeterReading from '@/components/MeterReading'
+import { ConsumersChart } from '@/components/ConsumersChart'
+import ClockCard from '@/components/ClockCard'
+import Banner from '@/components/Banner'
 
 
 const page = () => {
   return (
     <div className="flex flex-1 flex-col gap-4 px-4 pt-2">
+     
       
-      {/* Cards */}
-
       <DashboardCards/>
-
-      {/* graph */}
-    
+      
     <div className="min-h-[100vh]  rounded-xl flex flex-col items-center justify-center md:flex-row gap-4 mt-6 md:min-h-min " >
       <div className='md:w-1/2'>
       <Consumption/>
 
       </div>
-      <div className='md:w-1/2'>
+      <div className='md:w-1/2 w-full'>
       <CustomersTable/>
 
       </div>
@@ -30,14 +30,14 @@ const page = () => {
       
      
     </div>
-    <div className="min-h-[100vh] rounded-xl flex flex-col items-center justify-center md:flex-row gap-4 mt-6 md:min-h-min " >
+    <div className="min-h-[100vh] rounded-xl flex flex-col items-center justify-center md:flex-row gap-4 md:mt-6 md:min-h-min " >
       
-      <div className='md:w-1/2 ml-2'>
+      <div className='md:w-1/2  w-full ml-2'>
       <MeterReading/>
 
       </div>
-      <div className='md:w-1/2'>
-      <Consumption/>
+      <div className='md:w-1/2 w-full '>
+      <ConsumersChart/>
 
       </div>
       
@@ -49,12 +49,18 @@ const page = () => {
     
     
 
-    <div className=' flex  flex-col gap-2'>
-    <div>
-        <h1 className='text-xl font-bold'>Sites available</h1> 
-        
-    </div>
-      <Map/>
+    <div className='mt-3 rounded-xl flex flex-col items-center justify-center md:flex-row gap-4 md:mt-6 md:min-h-min '>
+
+      <div className='md:w-3/4 w-full'>
+        <Map/>
+
+      </div>
+
+      {/* <div className='w-1/4'>
+        <ClockCard/>
+      </div> */}
+    
+     
 
 
     </div>

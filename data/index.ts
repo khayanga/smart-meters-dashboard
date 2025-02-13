@@ -1,4 +1,4 @@
-import {  Building, CircleUserRound, Files, Home,  MapPin, MapPinHouse, Timer, UserRound } from "lucide-react"
+import {  Building,  Files, Home,  MapPin, MapPinHouse, Timer, UserRound } from "lucide-react"
 
 export const items = [
     {

@@ -44,7 +44,7 @@ export function Consumption() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Consumption </CardTitle>
+        <CardTitle className="text-lg font-bold">Consumption </CardTitle>
         <CardDescription>
           Showing total consumption for the last 6 months
         </CardDescription>
@@ -90,7 +90,7 @@ export function Consumption() {
               Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
             </div>
             <div className="flex items-center gap-2 leading-none text-muted-foreground">
-              January - June 2024
+              January - December {new Date().getFullYear()}
             </div>
           </div>
         </div>
