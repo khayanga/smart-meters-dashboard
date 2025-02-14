@@ -6,13 +6,14 @@ import React from 'react'
 import CustomersTable from '@/components/CustomersTable'
 import MeterReading from '@/components/MeterReading'
 import { ConsumersChart } from '@/components/ConsumersChart'
-import ClockCard from '@/components/ClockCard'
-import Banner from '@/components/Banner'
+
 
 
 const page = () => {
   return (
     <div className="flex flex-1 flex-col gap-4 px-4 pt-2">
+     
+
      
       
       <DashboardCards/>

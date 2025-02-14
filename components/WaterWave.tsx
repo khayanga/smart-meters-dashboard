@@ -3,7 +3,7 @@ import Wave from "react-wavify";
 
 const WaterWave = () => {
   return (
-    <div className="relative w-full h-24 overflow-hidden">
+    <div className="relative w-full h-24 overflow-hidden rounded-xl">
       {/* Back Wave (Lighter & Slightly Lower) */}
       <Wave
         fill="#80CED7"

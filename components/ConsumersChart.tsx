@@ -18,7 +18,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 const chartData = [
-  { meter: "m1", litres: 55, fill: "var(--color-m1)" },
+  { meter: "m1", litres: 88, fill: "var(--color-m1)" },
   { meter: "m2", litres: 100, fill: "var(--color-m2)" },
   { meter: "m3", litres: 187, fill: "var(--color-m3)" },
   { meter: "m4", litres: 170, fill: "var(--color-m4)" },
